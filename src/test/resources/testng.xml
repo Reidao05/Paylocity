@@ -1,9 +1,46 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="My Test Suite">
-    <test name="My Test">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/IdeaProjects/STEAssessmentAutomationChallenge">
         <classes>
-            <class name="com.paylocity.tests.login.LoginTest"/>
-
+            <class name="com.paylocity.api.DelDeleteEmployeeRequestTest">
+                <methods>
+                    <include name="testADeleteEmployeeRequest"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.api.GetEmployeeListRequestTest">
+                <methods>
+                    <include name="testAGetEmployeeListRequest"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.api.GetEmployeeRequestTest">
+                <methods>
+                    <include name="testGetEmployeeRequest"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.api.PostAddEmployeeRequestTest">
+                <methods><include name="testAPostRequestWithJsonFile"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.api.PutUpdateEmployeeRequestTest">
+                <methods>
+                    <include name="testAUpdateEmployeeRequestWithJsonFile"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.test.benefitsdetails.BenefitsDashboardTest">
+                <methods>
+                    <include name="testBenefitsDashboardTableColumnHeaderIsDisplayed"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.test.javsscripts.JavaScriptTest">
+                <methods><include name="testScrollingToElement"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.test.login.LoginTest">
+                <methods>
+                    <include name="testLoginErrorMessage"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
