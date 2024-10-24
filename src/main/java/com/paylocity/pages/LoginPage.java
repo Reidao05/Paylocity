@@ -1,12 +1,6 @@
 package com.paylocity.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.devtools.v85.database.Database;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class LoginPage extends BasePage{
 
@@ -25,8 +19,7 @@ public class LoginPage extends BasePage{
         return new BenefitsDetailsPage();
     }
     public BenefitsDetailsPage loginIntoApplication(String username, String password){
-        WebDriverWait wait = new WebDriverWait( driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField));
+        waitForVisibility(usernameField, 10);
         setUsername(username);
         setPassword(password);
         return clickingLoginButton();

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/IdeaProjects/STEAssessmentAutomationChallenge">
+        <classes>
+            <class name="com.paylocity.api.tests.DelDeleteEmployeeRequestTest">
+                <methods>
+                    <include name="testADeleteEmployeeRequest"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.api.tests.GetEmployeeListRequestTest">
+                <methods>
+                    <include name="testAGetEmployeeListRequest"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.api.tests.GetEmployeeRequestTest">
+                <methods>
+                    <include name="testGetEmployeeRequest"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.api.tests.PostAddEmployeeRequestTest">
+                <methods><include name="testAPostRequestWithJsonFile"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.api.tests.PutUpdateEmployeeRequestTest">
+                <methods>
+                <include name="testAUpdateEmployeeRequestWithJsonFile"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.tests.benefitsdetails.BenefitsDashboardTest">
+                <methods>
+                    <include name="testBenefitsDashboardTableColumnHeaderIsDisplayed"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.tests.javsscripts.JavaScriptTest">
+                <methods><include name="testScrollingToElement"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.tests.login.LoginTest">
+                <methods>
+                    <include name="testLoginErrorMessage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
