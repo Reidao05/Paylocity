@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T09:35:02 EDT" name="Default Suite" finished-at="2024-10-24T09:35:11 EDT" duration-ms="8357">
+  <suite started-at="2024-10-24T10:31:14 EDT" name="Default Suite" finished-at="2024-10-24T10:31:21 EDT" duration-ms="7188">
     <groups>
     </groups>
-    <test started-at="2024-10-24T09:35:02 EDT" name="STEAssessmentAutomationChallenge" finished-at="2024-10-24T09:35:11 EDT" duration-ms="8357">
+    <test started-at="2024-10-24T10:31:14 EDT" name="STEAssessmentAutomationChallenge" finished-at="2024-10-24T10:31:21 EDT" duration-ms="7188">
       <class name="com.paylocity.test.login.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.paylocity.test.login.LoginTest@f74e835]" started-at="2024-10-24T09:35:02 EDT" name="setUp" finished-at="2024-10-24T09:35:06 EDT" duration-ms="3473" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.paylocity.test.login.LoginTest@b40bb6e]" started-at="2024-10-24T10:31:14 EDT" name="setUp" finished-at="2024-10-24T10:31:18 EDT" duration-ms="4358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="loadApplication()[pri:0, instance:com.paylocity.test.login.LoginTest@f74e835]" started-at="2024-10-24T09:35:06 EDT" name="loadApplication" finished-at="2024-10-24T09:35:09 EDT" duration-ms="2873" status="PASS">
+        <test-method is-config="true" signature="loadApplication()[pri:0, instance:com.paylocity.test.login.LoginTest@b40bb6e]" started-at="2024-10-24T10:31:18 EDT" name="loadApplication" finished-at="2024-10-24T10:31:19 EDT" duration-ms="1045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadApplication -->
-        <test-method signature="testLoginErrorMessage()[pri:0, instance:com.paylocity.test.login.LoginTest@f74e835]" started-at="2024-10-24T09:35:09 EDT" name="testLoginErrorMessage" finished-at="2024-10-24T09:35:10 EDT" duration-ms="1636" status="PASS">
+        <test-method signature="testLoginErrorMessage()[pri:0, instance:com.paylocity.test.login.LoginTest@b40bb6e]" started-at="2024-10-24T10:31:19 EDT" name="testLoginErrorMessage" finished-at="2024-10-24T10:31:20 EDT" duration-ms="552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.paylocity.test.login.LoginTest@f74e835]" started-at="2024-10-24T09:35:10 EDT" name="tearDown" finished-at="2024-10-24T09:35:11 EDT" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="loadApplication()[pri:0, instance:com.paylocity.test.login.LoginTest@b40bb6e]" started-at="2024-10-24T10:31:20 EDT" name="loadApplication" finished-at="2024-10-24T10:31:20 EDT" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadApplication -->
+        <test-method signature="testLoginWithAValidId()[pri:0, instance:com.paylocity.test.login.LoginTest@b40bb6e]" started-at="2024-10-24T10:31:20 EDT" name="testLoginWithAValidId" finished-at="2024-10-24T10:31:21 EDT" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithAValidId -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.paylocity.test.login.LoginTest@b40bb6e]" started-at="2024-10-24T10:31:21 EDT" name="tearDown" finished-at="2024-10-24T10:31:21 EDT" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

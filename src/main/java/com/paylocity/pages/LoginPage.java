@@ -7,6 +7,7 @@ public class LoginPage extends BasePage{
     private final By usernameField = By.id("Username");
     private final By passwordField = By.id("Password");
     private final By loginButton = By.className("btn-primary");
+    private final By logoutButton = By.xpath("/html/body/header/nav/div/ul/li/a");
     private final By errorMessage = By.cssSelector("div.text-danger.validation-summary-errors");
     public void setUsername(String username){
         set(usernameField, username);
@@ -16,6 +17,10 @@ public class LoginPage extends BasePage{
     }
     public BenefitsDetailsPage clickingLoginButton(){
         click(loginButton);
+        return new BenefitsDetailsPage();
+    }
+    public BenefitsDetailsPage clickingLogoutButton(){
+        click(logoutButton);
         return new BenefitsDetailsPage();
     }
     public BenefitsDetailsPage loginIntoApplication(String username, String password){

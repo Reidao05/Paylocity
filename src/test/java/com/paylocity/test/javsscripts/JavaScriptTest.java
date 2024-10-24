@@ -16,4 +16,5 @@ public class JavaScriptTest extends BaseTest {
 
         addEmployeeForm.gotToForms();
     }
+
 }
