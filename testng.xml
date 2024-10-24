@@ -3,40 +3,57 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/IdeaProjects/STEAssessmentAutomationChallenge">
         <classes>
-            <class name="com.paylocity.api.tests.DelDeleteEmployeeRequestTest">
+            <class name="com.paylocity.api.DelDeleteEmployeeRequestTest">
                 <methods>
                     <include name="testADeleteEmployeeRequest"/>
                 </methods>
             </class>
-            <class name="com.paylocity.api.tests.GetEmployeeListRequestTest">
+            <class name="com.paylocity.api.GetEmployeeListRequestTest">
                 <methods>
                     <include name="testAGetEmployeeListRequest"/>
                 </methods>
             </class>
-            <class name="com.paylocity.api.tests.GetEmployeeRequestTest">
+            <class name="com.paylocity.api.GetEmployeeRequestTest">
                 <methods>
                     <include name="testGetEmployeeRequest"/>
                 </methods>
             </class>
-            <class name="com.paylocity.api.tests.PostAddEmployeeRequestTest">
-                <methods><include name="testAPostRequestWithJsonFile"/>
-                </methods>
-            </class>
-            <class name="com.paylocity.api.tests.PutUpdateEmployeeRequestTest">
+            <class name="com.paylocity.api.PostAddEmployeeRequestTest">
                 <methods>
-                <include name="testAUpdateEmployeeRequestWithJsonFile"/>
+                    <include name="testAPostRequestWithJsonFile"/>
                 </methods>
             </class>
-            <class name="com.paylocity.tests.benefitsdetails.BenefitsDashboardTest">
+            <class name="com.paylocity.api.PutUpdateEmployeeRequestTest">
+                <methods>
+                    <include name="testAUpdateEmployeeRequestWithJsonFile"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.test.benefitsdetails.BenefitsDashboardTest">
                 <methods>
                     <include name="testBenefitsDashboardTableColumnHeaderIsDisplayed"/>
                 </methods>
             </class>
-            <class name="com.paylocity.tests.javsscripts.JavaScriptTest">
-                <methods><include name="testScrollingToElement"/>
+            <class name="com.paylocity.test.benefitsdetails.DeleteBenefitsDetailsTest">
+                <methods>
+                    <include name="testDeleteEmployeeById"/>
                 </methods>
             </class>
-            <class name="com.paylocity.tests.login.LoginTest">
+            <class name="com.paylocity.test.benefitsdetails.UpdateBenefitsDetailsTest">
+                <methods>
+                    <include name="testUpdateEmployeeDetails"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.test.forms.FormsTest">
+                <methods>
+                    <include name="testEnterEmployeeInformationIntoTheForm"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.test.javsscripts.JavaScriptTest">
+                <methods>
+                    <include name="testScrollingToElement"/>
+                </methods>
+            </class>
+            <class name="com.paylocity.test.login.LoginTest">
                 <methods>
                     <include name="testLoginErrorMessage"/>
                 </methods>
