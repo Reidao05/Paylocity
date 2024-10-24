@@ -1,12 +1,10 @@
 package com.paylocity.test.login;
 
-import com.paylocity.pages.BenefitsDetailsPage;
-import org.testng.annotations.Test;
-import org.testng.Assert;
 import com.paylocity.base.BaseTest;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
-
     @Test
     public void testLoginErrorMessage(){
         loginPage.setUsername("TestUser474");
